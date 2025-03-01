@@ -593,7 +593,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .footer-form-text {
     font-weight: 500;
     font-size: 16px;
-    /* line-height: 24px; */
+    
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
@@ -609,10 +609,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     background-color: transparent;
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    /* text */
+    
     font-weight: 400;
     font-size: 12px;
-    /* line-height: 24px; */
+   
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
@@ -704,6 +704,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-div {
     margin-bottom: 16px;
+    margin-bottom: 8px;
 
 }
 .modal-form-button
@@ -775,7 +776,6 @@ color: #2e2f42;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-bottom: 16px;
 }
 
 .form {
@@ -816,12 +816,14 @@ gap: 8px;
 
 }
 
-.input-class:checked {
-background-color:#404bbf;
-border: none;
-fill:#F4F4FD;
+input[type="checkbox"]:checked+.privacy-label .privacy-span {
+    background-color: #404bbf;
+    border: none;
 }
 
+input[type="checkbox"]:checked+.privacy-label .privacy-span svg.icon {
+    fill: #F4F4FD;
+}
 
 .textarea-form {
     width: 100%;
