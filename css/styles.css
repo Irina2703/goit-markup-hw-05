@@ -627,8 +627,9 @@ pointer-events: auto;
     transform: translate(-50%, -50%) scale(1.5);
     }
 
+.modal-div {
+    margin-bottom: 24px;
 
-.modal {
 
 }
 .modal-form-button
@@ -691,7 +692,11 @@ gap: 8px;
     height: 40px;
 
 }
-
+.input-class:checked {
+background-color:#404bbf;
+border: none;
+fill:#F4F4FD;
+}
 .input-text {
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
