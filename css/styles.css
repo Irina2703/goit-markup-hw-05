@@ -750,6 +750,7 @@ position: absolute;
 }
 .modal-input-div{
     position: relative;
+    margin-bottom: 8px;
     
 }
 .modal-icon:focus,
