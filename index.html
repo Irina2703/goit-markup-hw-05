@@ -56,19 +56,87 @@
                     </li>
                 </ul>
             </address>
-        </div>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/3-line.svg#icon-Group"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close" data-menu-close><svg height="8" width="8"
+                            class="svg-icon-mobile-menu">
+                            <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                        </svg></button>
+                    <nav class="mobile-menu-nav">
+                        <ul class="mobile-menu-nav-ul">
+                            <li>
+                                <a href="" class="mobile-menu-nav-link-start">Studio</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu-nav-link">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu-nav-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="mobile-menu-address">
+                        <ul class="mobile-menu-address-ul">
+                            <li>
+                                <a href="tel:+110001111111" class="mobile-menu-address-li-color">+11 (000) 111-11-11</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@devstudio.com"
+                                    class="mobile-menu-address-li">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div>
+                        <ul class="team-icon-ul">
+                            <li class="team-icon-li">
+                                <a href="" class="team-icon-a">
+                                    <svg width="24" height="24" class="svg-icon">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-icon-li">
+                                <a href="" class="team-icon-a">
+                                    <svg width="24" height="24" class="svg-icon">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-icon-li">
+                                <a href="" class="team-icon-a">
+                                    <svg width="24" height="24" class="svg-icon">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-icon-li">
+                                <a href="" class="team-icon-a">
+                                    <svg width="24" height="24" class="svg-icon">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </header>
     <main>
         <!--region hero-->
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="button" type="button">Order Service</button>
+                <button class="button" type="button" data-menu-open>Order Service</button>
             </div>
         </section>
 
         <!-- test -->
-        <section class="box">
+        <section class="box hidden">
             <div class="container">
                 <h2 class="visually-hidden">advantages</h2>
                 <ul class="benefits-list">
@@ -129,6 +197,7 @@
                 <h2 class="team-name">Our Team</h2>
                 <ul class="team-ul">
                     <li class="team">
+
                         <img src="./images/mark_guerrero.jpg" alt="mark_guerrero" width="264" height="260" />
                         <div class="team-container">
                             <h3 class="our-team-h">Mark Guerrero</h3>
@@ -280,7 +349,7 @@
             </div>
         </section>
         <!-- portfolio -->
-        <section class="portfolio-section">
+        <section class="portfolio-section ">
             <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-ul">
@@ -361,6 +430,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo">
@@ -372,7 +442,7 @@
             </div>
 
             <div class="footer-link">
-                <p class="footer-text">Social media</p>
+                <p class="footer-text-scl">Social media</p>
                 <ul class="footer-svg-ul">
                     <li class="footer-svg-li">
                         <a href="" class="footer-svg-a">
@@ -421,9 +491,9 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-open" data-menu-open>
         <div class="modal">
-            <button class="modal-form-button" type="button">
+            <button class="modal-form-button" type="button" data-menu-close>
                 <svg class="close-button" width="8" height="8">
                     <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
@@ -467,7 +537,7 @@
                 </div>
 
 
-                <div class="checkbox">
+                <div class="checkbox ">
                     <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
                         class="user-privacy visually-hidden" />
                     <label for="user-privacy" class="privacy-label">
@@ -484,6 +554,8 @@
             </form>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
